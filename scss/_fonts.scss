@@ -1,54 +1,35 @@
-/* roboto-condensed-regular - cyrillic_latin*/
+/* ubuntu-regular - cyrillic_latin */
 @font-face {
-  font-family: 'Roboto Condensed-b';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff") format("woff");
-}
-
-/* roboto-condensed-700 - cyrillic_latin*/
-@font-face {
-  font-family: 'Roboto Condensed-b';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff") format("woff");
-}
-
-/* oswald-regular - cyrillic_latin*/
-@font-face {
-  font-family: 'Oswald-b';
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/oswald-v29-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/oswald-v29-cyrillic_latin-regular.woff") format("woff");
-
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+    url('../fonts/ubuntu-v14-cyrillic_latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/ubuntu-v14-cyrillic_latin-regular.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* oswald-500 - cyrillic_latin*/
+/* ubuntu-500 - cyrillic_latin */
 @font-face {
-  font-family: 'Oswald-b';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/oswald-v29-cyrillic_latin-500.woff2") format("woff2"), url("../fonts/oswald-v29-cyrillic_latin-500.woff") format("woff");
-
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+*/
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+    url('../fonts/ubuntu-v14-cyrillic_latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/ubuntu-v14-cyrillic_latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* oswald-700 - cyrillic_latin*/
+/* ubuntu-700 - cyrillic_latin */
 @font-face {
-  font-family: 'Oswald-b';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/oswald-v29-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/oswald-v29-cyrillic_latin-700.woff") format("woff");
-
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+*/
-}
-
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  src: local(""),
-    url("../libs/font-awesome/webfonts/fa-solid-900.woff2") format("woff2"),
-    url("../libs/font-awesome/webfonts/fa-solid-900.woff") format("woff");
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+    url('../fonts/ubuntu-v14-cyrillic_latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/ubuntu-v14-cyrillic_latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

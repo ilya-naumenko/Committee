@@ -11,80 +11,72 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="libs/font-awesome/css/all.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="wrapper header">
+  <header class="header">
 
-    <!-- ШАПКА КОНТАКТЫ -->
+    <!-- КОНТАКТЫ -->
 
-    <div class="grid-contact header-contact">
-      <div class="grid-contact__phone">
-        <a href="tel:+77012256545">
+    <div class="contact">
+      <div class="wrapper">
+        <a href="tel:+74951045755" class="contact__phone">
           <img src="img/icon-contact-phone.svg" alt="icon">
-          <p>+7 701 225-65-45</p>
+          <p>+7 (495) 104-57-55</p>
         </a>
-      </div>
-      <div class="grid-contact__phone">
-        <a href="tel:+77074656545">
-          <img src="img/icon-contact-phone.svg" alt="icon">
-          <p>+7 707 465-65-45</p>
+        <a href="mailto:почта@кппн.рф" class="contact__email">
+          <img src="img/icon-contact-email.svg" alt="icon">
+          <p>почта@кппн.рф</p>
         </a>
-      </div>
-      <div class="grid-contact__address">
-        <img src="img/icon-contact-address.svg" alt="icon">
-        <p>г. Алматы, к/г Жана-Куат, ул. 15, дом 218</p>
-      </div>
-      <div class="grid-contact__email">
-        <img src="img/icon-contact-email.svg" alt="icon">
-        <p>olya_st82@mail.ru</p>
-      </div>
-      <div class="grid-contact__social-icon">
-        <a href="https://www.instagram.com/best_children_kz/" target="_blank"><img src="img/icon-contact-social-i.svg"
-            alt="i"></a>
-        <a href="https://www.facebook.com/Bestchildrenkz/" target="_blank"><img src="img/icon-contact-social-f.svg"
-            alt="f"></a>
+        <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+          <img src="img/YouTube.svg" alt="icon">
+        </a>
       </div>
     </div>
 
+    <!-- ЛОГОТИП, НАЗВАНИЕ, КНОПКА ПОДПИСКИ -->
 
-    <!-- ЛОГОТИП, НАЗВАНИЕ, ОПИСАНИЕ -->
+    <section class="header-bg">
+      <div class="wrapper">
+        <img src="img/logo-committee.png" alt="логотип">
+        <div class="wrap">
 
-    <div class="header-wrapper">
+          <!-- ПОДПИСАТЬСЯ НА НОВОСТИ -->
 
+          <a href="#popup" class="subs popup-link">Подписаться на новости</a>
 
-      <!-- ЗАКАЗАТЬ ЗВОНОК -->
+          <!-- ФОРМА ОТПРАВКИ -->
 
-      <a href="#popup" class="header-wrapper__button popup-link">заказать звонок</a>
+          <div id="popup" class="mfp-hide form">
 
-      <!-- ФОРМА ОТПРАВКИ -->
+            <p>Подписаться на новости.
+              Вам будут регулярно приходить письма с новостями комитетета.</p>
+            <input type="text" name="name" placeholder="Введите ваше имя" id="">
+            <input type="text" name="email" placeholder="Введите ваш email" id="">
+            <button class="form__buttom">Отправить</button>
+            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+          </div>
 
-      <div id="popup" class="mfp-hide form">
-
-        <p>Заполните поля, мы вам презвоним</p>
-        <input type="text" name="name" placeholder="Имя" id=""><br>
-        <input type="text" name="phone" placeholder="Номер телефона" id=""><br>
-        <input type="text" name="time" placeholder="Название занятия" id=""><br>
-        <button class="form__buttom">Отправить</button>
-        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+          <h1 class="header-title">Комитет по правовой поддержке Ассамблеи народов России</h1>
+        </div>
       </div>
+    </section>
 
-      <!-- МЕНЮ -->
-
-      <nav>
-        <ul class="menu__links">
-          <!--<li><a href="#">главная</a></li>-->
-          <li><a class="menu__links-item" href="#news">новости</a></li>
-          <li><a class="menu__links-item" href="#gallery">галерея</a></li>
-          <li><a class="menu__links-item" href="#comments">отзывы</a></li>
-          <li><a class="menu__links-item" href="#about">о нас</a></li>
-          <li><a class="menu__links-item" href="#footer">контакты</a></li>
-        </ul>
-      </nav>
+    <!-- МЕНЮ -->
 
 
-    </div>
+    <nav class="nav">
+      <ul class="wrapper">
+        <li><a class="menu__item" href="#about">О комитете / документы комитета</a></li>
+        <li><a class="menu__item" href="#structure">Структура комитета</a></li>
+        <li><a class="menu__item" href="#council">Учёный совет</a></li>
+        <li><a class="menu__item" href="#department">Региональные отделения</a></li>
+        <li><a class="menu__item" href="#partners">Партнеры</a></li>
+        <li><a class="menu__item" href="#news">Новости</a></li>
+        <li><a class="menu__item" href="#communication">Обратная связь</a></li>
+      </ul>
+    </nav>
 
   </header>
 
@@ -92,21 +84,109 @@
   <!-- БЛОКИ ОПИСАНИЯ ЗАНЯТИЙ ЦЕНТРА -->
 
 
-  <main class="wrapper main">
+  <main class="about">
+    <h2 class="title">О комитете</h2>
+    <p class="desc">Развитие правового государства, формирование гражданского общества и укрепление национального
+      согласия в России требуют
+      высокой правовой культуры, без которой не могут быть в полной мере реализованы такие базовые ценности и принципы
+      жизни
+      общества, как верховенство закона, приоритет человека, его неотчуждаемых прав и свобод, обеспечение надёжной
+      защищённости публичных интересов.</p>
+    <p class="desc">Закреплено в «Основах государственной политики Российской Федерации в сфере развития правовой
+      грамотности и
+      правосознания граждан» (утв. Президентом РФ 4 мая 2011 г.)
+    </p>
+    <p class="desc">В конце октября 2019 года на расширенном заседании Совета Ассамблеи народов России был создан
+      Комитет по правовой
+      поддержке Ассамблеи народов России.</p>
+    <p class="desc">Цели и задачи создания Комитета заключаются в оказании помощи в юридических и правовых вопросах
+      граждан Российской
+      Федерации, вне зависимости от их статуса, национальности и вероисповедания.</p>
+    <p class="desc">Видный общественный деятель, академик, член президиума Совета Ассамблеи народов России, председатель
+      Совета Ассамблеи
+      народов Чувашии Лев Кураков предложил избрать председателем «Комитета по правовой поддержке населения» кандидатуру
+      Григория Сарбаева (гиперссылка на анкету). В результате последующего голосования, Григорий Сарбаев был избран
+      председателем Комитета (гиперссылка на выписку о голосовании).</p>
+    <p class="desc">На сегодня идет формирование региональных структурных отделений Комитета по правовой поддержке
+      Ассамблеи народов России.
+      Обсуждаются и утверждаются планы мероприятий и рабочих поездок на 2020 год по регионам нашей страны для разрешения
+      вопросов нарушения прав граждан Российской Федерации.</p>
+    <p class="desc">Комитет по правовой поддержке Ассамблеи народов России готов к сотрудничеству с руководителями
+      регионов, министерствами
+      и ведомствами, местными Администрациями, профессиональными юристами, общественными организациями и активными
+      гражданами.
+    </p>
+    <p class="desc">Важно отметить, что работа Комитета не ограничивается одним направлением юридической помощи
+      гражданам России. В планах
+      проведение научно-практических конференций, симпозиумов, круглых столов, семинаров, онлайн-семинаров,
+      мастер-классов,
+      тренингов, издание методической и научно-практической литературы, где лучшие юристы-практики Российской Федерации
+      смогут
+      поделиться своим наработанным опытом.</p>
+    <p class="desc">Объединив наши усилия, мы сможем не только решать отдельные проблемы или вопросы по нарушению прав
+      граждан Российской
+      Федерации, в наших силах сделать современное общество юридически образованным и грамотным.</p>
+    <p class="desc">Мы убеждены в том, что любые цели достижимы, а задачи решаемы !</p>
+    <h2 class="title" id="docs">документы комитета</h2>
 
+    <h3 class="subtitle">Протокол о создании комитета</h3>
+    <div class="inner-sub">
+      <img src="img/pdf.png" alt="pdf">
+      <a href="">Протокол о создании комитета</a>
+    </div>
+
+    <h3 class="subtitle">Положение о комитете</h3>
+    <div class="inner-sub">
+      <img src="img/pdf.png" alt="pdf">
+      <a href="">Положение о комитете</a>
+    </div>
+
+    <h3 class="subtitle">Внутренние документы комитета</h3>
+    <div class="inner-sub">
+      <img src="img/pdf.png" alt="pdf">
+      <a href="">Документ</a>
+    </div>
   </main>
 
 
 
-  <footer class="wrapper footer" id="footer">
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <div class="inner-text">
+        <p class="text">Комитет по правовой поддержке ассамблеи народов России, создан в 2019 году и является
+          добровольной, самоуправляемой
+          общероссийской общественной организацией.
+        </p>
+        <p class="text">© Комитет по правовой поддержке Ассамблеи народов
+          России 2019 г.
+        </p>
+      </div>
+      <div class="contact-footer">
+        <div class="inner-contact">
+          <a href="tel:+74951045755" class="contact__phone">
+            <img src="img/icon-contact-phone.svg" alt="icon">
+            <p>+7 (495) 104-57-55</p>
+          </a>
+        </div>
+        <div class="inner-contact">
+          <a href="mailto:почта@кппн.рф" class="contact__email">
+            <img src="img/icon-contact-email.svg" alt="icon">
+            <p>почта@кппн.рф</p>
+          </a>
+        </div>
+        <div class="inner-contact">
+          <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+            <img src="img/YouTube.svg" alt="icon">
+          </a>
+        </div>
 
-    <p id="copi" style="text-align: center; margin-top: 15px;">© 2019 Центр детского развития "Лучшие дети"</p>
+      </div>
+    </div>
     <a href="http://inws.net/" target="_blank" class="developer">Сайт разработан в веб-студии
-      Ильи Науменко</a>
+      Ильи Науменко
+    </a>
   </footer>
 
-  <!-- Кнопка заказать звонок внизу-->
-  <a href="#popup" class="button-form"><img src="img/icon-smartphone-ringing.svg" alt="phone"></a>
 
   <!-- Кнопка наверх-->
   <a href="#" title="Вернуться к началу" class="topbutton">&#8593</a>
