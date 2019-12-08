@@ -1,6 +1,10 @@
+$ git config --global user.name "ИМЯ_ПОЛЬЗОВАТЕЛЯ"
+$ git config --global user.email "email"
+
 /*Создание нового репозитория*/
 
-echo "# ИМЯ_ПРОЕКТА" >> README.md
+/*echo "# ИМЯ_ПРОЕКТА" >> README.md*/
+
 git init
 git add .
 git commit -m "first commit"
