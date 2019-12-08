@@ -1,0 +1,15 @@
+/*Создание нового репозитория*/
+
+echo "# ИМЯ_ПРОЕКТА" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/ИМЯ_ПОЛЬЗОВАТЕЛЯ/ИМЯ_ПРОЕКТА.git
+git push -u origin master
+
+/*Работа с репозиторием*/
+
+git add .
+git status
+git commit -m "commit"
+git push
