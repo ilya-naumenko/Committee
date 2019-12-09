@@ -140,7 +140,19 @@
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:active {
+    color: $btn;
+  }
 }
+
+.current a {
+  color: $btn;
+}
+
+
 
 // MAIN
 .title {
@@ -255,6 +267,142 @@
   }
 
 }
+
+// СТРАНИЦА СТРУКТУРА КОМИТЕТА
+
+.chief {
+  margin: 0 auto;
+}
+
+.member-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.member {
+  width: 240px;
+  height: 400px;
+  margin-bottom: 30px;
+
+  img {
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .member_name {
+    font-size: 22px;
+    max-width: 240px;
+    text-align: center;
+  }
+}
+
+// СТРАНИЦА РЕГИОНАЛЬНЫЕ ОТДЕЛЕНИЯ
+
+.depart-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.department {
+  margin-bottom: 60px;
+
+  .address {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    max-width: 240px;
+  }
+
+  img {
+    margin-top: 15px;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+// СТРАНИЦА ПАРТНЁРЫ
+
+.partners-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner {
+  margin-bottom: 60px;
+
+  .desc {
+    font-weight: 400;
+    color: #000000;
+    max-width: 240px;
+  }
+
+  img {
+    margin-top: 15px;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+// СТРАНИЦА НОВОСТИ
+
+.news-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new {
+  margin-bottom: 60px;
+  display: flex;
+
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+
+  .desc {
+    font-weight: 400;
+    color: #000000;
+    max-width: 405px;
+  }
+}
+
+// СТРАНИЦА ОБРАТНАЯ СВЯЗЬ
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+
+  p,
+  a {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+}
+
+.map {
+  width: 1140px;
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
 
 
 
